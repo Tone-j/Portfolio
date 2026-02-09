@@ -48,17 +48,17 @@ class NavBar extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   ClipOval(
-                    child: Image.asset(
+                    child: Image.network(
                       'icons/my_avator.png',
-                      width: 32,
-                      height: 32,
+                      width: 45,
+                      height: 45,
                       fit: BoxFit.cover,
                     ),
                   ),
                   const SizedBox(width: 10),
                   Text(
                     'Tone',
-                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                    style: Theme.of(context).textTheme.displayMedium?.copyWith(
                           color: AppColors.accent,
                           fontWeight: FontWeight.w800,
                           letterSpacing: 2,

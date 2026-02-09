@@ -98,7 +98,7 @@ class ContactSection extends StatelessWidget {
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  '\u00a9 ${DateTime.now().year} Mongezi Tone Jali. Built with Flutter.',
+                  '\u00a9 ${DateTime.now().year} Mongezi Tone Jali.',
                   style: TextStyle(
                     fontSize: 13,
                     color: AppColors.textMuted,

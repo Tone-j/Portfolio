@@ -40,13 +40,33 @@ class NavBar extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Text(
-            'Tone',
-            style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  color: AppColors.accent,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: 2,
-                ),
+          GestureDetector(
+            onTap: () => onTap(0),
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  ClipOval(
+                    child: Image.asset(
+                      'icons/my_avator.png',
+                      width: 32,
+                      height: 32,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Text(
+                    'Tone',
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                          color: AppColors.accent,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 2,
+                        ),
+                  ),
+                ],
+              ),
+            ),
           ),
           const Spacer(),
           if (isMobile)

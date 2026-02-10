@@ -9,6 +9,9 @@ class ProjectCard extends StatefulWidget {
   final Map<String, String> tags;
   final IconData icon;
   final String? githubUrl;
+  final String? liveUrl;
+  final String? status;
+  final String? demoCredentials;
 
   const ProjectCard({
     super.key,
@@ -17,6 +20,9 @@ class ProjectCard extends StatefulWidget {
     required this.tags,
     required this.icon,
     this.githubUrl,
+    this.liveUrl,
+    this.status,
+    this.demoCredentials,
   });
 
   @override
@@ -61,7 +67,39 @@ class _ProjectCardState extends State<ProjectCard> {
                     size: 24,
                   ),
                 ),
+                if (widget.status != null) ...[
+                  const SizedBox(width: 10),
+                  Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: Colors.orange.withValues(alpha: 0.15),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: Colors.orange.withValues(alpha: 0.4),
+                      ),
+                    ),
+                    child: Text(
+                      widget.status!,
+                      style: const TextStyle(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.orange,
+                      ),
+                    ),
+                  ),
+                ],
                 const Spacer(),
+                if (widget.liveUrl != null)
+                  IconButton(
+                    onPressed: () => launchUrl(Uri.parse(widget.liveUrl!)),
+                    icon: Icon(
+                      Icons.launch_rounded,
+                      color: AppColors.accent,
+                      size: 20,
+                    ),
+                    tooltip: 'Live Demo',
+                  ),
                 if (widget.githubUrl != null)
                   IconButton(
                     onPressed: () => launchUrl(Uri.parse(widget.githubUrl!)),
@@ -94,6 +132,41 @@ class _ProjectCardState extends State<ProjectCard> {
                 return _TagChip(label: entry.key, url: entry.value);
               }).toList(),
             ),
+            if (widget.demoCredentials != null) ...[
+              const SizedBox(height: 16),
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.blue.withValues(alpha: 0.08),
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(
+                    color: Colors.blue.withValues(alpha: 0.2),
+                  ),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Demo Credentials:',
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.blue[300],
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      widget.demoCredentials!,
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: AppColors.textSecondary,
+                        height: 1.5,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ],
         ),
       ),

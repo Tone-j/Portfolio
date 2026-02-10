@@ -53,6 +53,27 @@ class ProjectsSection extends StatelessWidget {
   Widget _buildProjectGrid(BuildContext context, bool isMobile) {
     final projects = [
       const _Project(
+        title: 'AdsRunner - Taxi Billboard Advertising Platform',
+        description:
+            'Cloud-native SaaS platform for managing digital billboard advertisements on '
+            'public transport vehicles. Built a full-stack solution featuring ad campaign '
+            'management, real-time analytics, passenger monitoring, and subscription services. '
+            'Leverages microservices architecture with Azure cloud infrastructure.',
+        tags: {
+          'Flutter': 'https://docs.flutter.dev/',
+          'C# / .NET 8': 'https://learn.microsoft.com/en-us/dotnet/',
+          'Azure': 'https://learn.microsoft.com/en-us/azure/',
+          'SQL Server': 'https://learn.microsoft.com/en-us/sql/sql-server/',
+          'Azure IoT Hub': 'https://learn.microsoft.com/en-us/azure/iot-hub/',
+          'Cosmos DB': 'https://learn.microsoft.com/en-us/azure/cosmos-db/',
+        },
+        icon: Icons.analytics,
+        liveUrl: 'https://tone-j.github.io/ads_runner',
+        githubUrl: 'https://github.com/Tone-j/ads_runner.git',
+        status: 'In Development',
+        demoCredentials: 'Email: JohnMitchell@mail.com\nPassword: Pass12345',
+      ),
+      const _Project(
         title: 'Fleet Management API Platform',
         description:
             'Developed and maintained .NET Core APIs for a cloud-based AI and IoT fleet '
@@ -131,6 +152,10 @@ class ProjectsSection extends StatelessWidget {
                 description: entry.value.description,
                 tags: entry.value.tags,
                 icon: entry.value.icon,
+                liveUrl: entry.value.liveUrl,
+                githubUrl: entry.value.githubUrl,
+                status: entry.value.status,
+                demoCredentials: entry.value.demoCredentials,
               ),
             ),
           );
@@ -153,6 +178,10 @@ class ProjectsSection extends StatelessWidget {
             description: entry.value.description,
             tags: entry.value.tags,
             icon: entry.value.icon,
+            liveUrl: entry.value.liveUrl,
+            githubUrl: entry.value.githubUrl,
+            status: entry.value.status,
+            demoCredentials: entry.value.demoCredentials,
           ),
         );
       }).toList(),
@@ -165,10 +194,18 @@ class _Project {
   final String description;
   final Map<String, String> tags;
   final IconData icon;
+  final String? liveUrl;
+  final String? githubUrl;
+  final String? status;
+  final String? demoCredentials;
   const _Project({
     required this.title,
     required this.description,
     required this.tags,
     required this.icon,
+    this.liveUrl,
+    this.githubUrl,
+    this.status,
+    this.demoCredentials,
   });
 }

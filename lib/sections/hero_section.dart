@@ -159,7 +159,8 @@ class HeroSection extends StatelessWidget {
             _SocialButton(
               icon: FontAwesomeIcons.github,
               label: 'GitHub',
-              onTap: () => launchUrl(Uri.parse('https://github.com/')),
+              onTap: () =>
+                  launchUrl(Uri.parse('https://github.com/MongeziTone')),
             ),
           ],
         ),

@@ -75,7 +75,8 @@ class ContactSection extends StatelessWidget {
                   icon: FontAwesomeIcons.github,
                   title: 'GitHub',
                   value: 'github.com',
-                  onTap: () => launchUrl(Uri.parse('https://github.com/')),
+                  onTap: () =>
+                      launchUrl(Uri.parse('https://github.com/MongeziTone')),
                 ),
                 const _ContactTile(
                   icon: Icons.location_on_outlined,

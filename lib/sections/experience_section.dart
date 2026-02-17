@@ -66,7 +66,8 @@ class ExperienceSection extends StatelessWidget {
                 ScrollReveal(
                   delay: Duration(milliseconds: 200),
                   child: TimelineTile(
-                    title: 'National Certificate: IT Systems Development',
+                    title:
+                        'National Certificate: INFORMATION TECHNOLOGY: Systems Development',
                     subtitle: 'WeThinkCode',
                     period: '2022',
                     icon: Icons.school_outlined,

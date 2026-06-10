@@ -45,10 +45,25 @@ class ExperienceSection extends StatelessWidget {
                 ScrollReveal(
                   delay: Duration(milliseconds: 100),
                   child: TimelineTile(
-                    title: 'Junior Full Stack Developer',
-                    subtitle: 'OOGi Lab \u2022 Durban North, South Africa',
+                    title: 'Software Developer',
+                    subtitle: 'OOGi Labs \u2022 Durban, South Africa | On-site',
                     subtitleUrl: 'https://www.oogi.ai/',
-                    period: 'Jan 2023 - Present',
+                    period: 'Apr 2026 - Present',
+                    icon: Icons.work_outline,
+                    points: [
+                      'Built an automated camera fault detection pipeline for a fleet management platform using a MobileNetV3-Small ONNX & tflite model, reducing manual identification of faulty vehicle cameras.',
+                      'Designed a consecutive-failure tracking system in SQL Server with atomic upsert logic, enabling scale-out-safe fault detection across distributed Azure Function instances.',
+                      'Integrated ML inference into a real-time image processing pipeline without blocking existing functionality, following clean architecture patterns with DI and repository abstractions.',
+                    ],
+                  ),
+                ),
+                ScrollReveal(
+                  delay: Duration(milliseconds: 150),
+                  child: TimelineTile(
+                    title: 'Junior Software Developer',
+                    subtitle: 'OOGi Labs \u2022 Durban, South Africa | On-site',
+                    subtitleUrl: 'https://www.oogi.ai/',
+                    period: 'Jan 2023 - Mar 2026',
                     icon: Icons.work_outline,
                     points: [
                       'Developed and maintained .NET Core APIs for a cloud-based AI and IoT fleet management platform serving logistics clients including Australia Post.',

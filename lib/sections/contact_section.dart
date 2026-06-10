@@ -67,9 +67,9 @@ class ContactSection extends StatelessWidget {
                 _ContactTile(
                   icon: FontAwesomeIcons.linkedin,
                   title: 'LinkedIn',
-                  value: 'Mongezi Tone Jali',
+                  value: 'Mongezi Tone Zama',
                   onTap: () => launchUrl(Uri.parse(
-                      'https://linkedin.com/in/mongezi-tone-jali-90184921a')),
+                      'https://linkedin.com/in/mongezi-tone-zama-90184921a')),
                 ),
                 _ContactTile(
                   icon: FontAwesomeIcons.github,
@@ -99,7 +99,7 @@ class ContactSection extends StatelessWidget {
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  '\u00a9 ${DateTime.now().year} Mongezi Tone Jali.',
+                  '\u00a9 ${DateTime.now().year} Mongezi Tone Zama.',
                   style: TextStyle(
                     fontSize: 13,
                     color: AppColors.textMuted,

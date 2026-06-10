@@ -26,7 +26,7 @@ class _PortfolioAppState extends State<PortfolioApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Mongezi Tone Jali - Portfolio',
+      title: 'Mongezi Tone Zama - Portfolio',
       debugShowCheckedModeBanner: false,
       theme: _isDark ? AppTheme.darkTheme : AppTheme.lightTheme,
       home: PortfolioPage(

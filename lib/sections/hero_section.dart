@@ -85,7 +85,7 @@ class HeroSection extends StatelessWidget {
         child: CircleAvatar(
           radius: radius,
           backgroundColor: AppColors.surface,
-          backgroundImage: const AssetImage('assets/images/Tone Jali.png'),
+          backgroundImage: const AssetImage('assets/images/Tone Zama.png'),
         ),
       ),
     );
@@ -115,7 +115,7 @@ class HeroSection extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         Text(
-          'Mongezi Tone Jali',
+          'Mongezi Tone Zama',
           textAlign: isMobile ? TextAlign.center : TextAlign.left,
           style: Theme.of(context).textTheme.displayLarge?.copyWith(
                 fontSize: isMobile ? 36 : 56,
@@ -149,7 +149,7 @@ class HeroSection extends StatelessWidget {
               icon: FontAwesomeIcons.linkedin,
               label: 'LinkedIn',
               onTap: () => launchUrl(Uri.parse(
-                  'https://linkedin.com/in/mongezi-tone-jali-90184921a')),
+                  'https://linkedin.com/in/mongezi-tone-zama-90184921a')),
             ),
             _SocialButton(
               icon: Icons.email_outlined,
@@ -269,7 +269,7 @@ class _ResumeButtonState extends State<_ResumeButton> {
       onEnter: (_) => setState(() => _isHovered = true),
       onExit: (_) => setState(() => _isHovered = false),
       child: GestureDetector(
-        onTap: () => launchUrl(Uri.parse('Mongezi_Tone_Jali_Resume.pdf')),
+        onTap: () => launchUrl(Uri.parse('Mongezi_Tone_Zama_Resume.pdf')),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),

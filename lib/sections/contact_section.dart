@@ -65,14 +65,14 @@ class ContactSection extends StatelessWidget {
                       launchUrl(Uri.parse('mailto:mongezitone@gmail.com')),
                 ),
                 _ContactTile(
-                  icon: FontAwesomeIcons.linkedin,
+                  icon: FontAwesomeIcons.linkedin.data,
                   title: 'LinkedIn',
                   value: 'Mongezi Tone Zama',
                   onTap: () => launchUrl(Uri.parse(
                       'https://linkedin.com/in/mongezi-tone-zama-90184921a')),
                 ),
                 _ContactTile(
-                  icon: FontAwesomeIcons.github,
+                  icon: FontAwesomeIcons.github.data,
                   title: 'GitHub',
                   value: 'github.com',
                   onTap: () =>

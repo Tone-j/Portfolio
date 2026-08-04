@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../config/app_theme.dart';
 import '../widgets/nav_bar.dart';
+import '../widgets/portfolio_assistant.dart';
 import '../sections/hero_section.dart';
 import '../sections/about_section.dart';
 import '../sections/skills_section.dart';
@@ -132,6 +133,7 @@ class _PortfolioPageState extends State<PortfolioPage> {
               onTap: () => launchUrl(Uri.parse('mailto:mongezitone@gmail.com')),
             ),
           ),
+          PortfolioAssistant(onNavigate: _scrollToSection),
         ],
       ),
     );

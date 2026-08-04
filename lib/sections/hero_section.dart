@@ -105,7 +105,7 @@ class HeroSection extends StatelessWidget {
             border: Border.all(color: AppColors.accent.withValues(alpha: 0.3)),
           ),
           child: const Text(
-            'Available for DevOps & SRE roles',
+            'Available for Backend & Cloud Engineering, DevOps & SRE roles',
             style: TextStyle(
               fontSize: 13,
               color: AppColors.accent,
@@ -123,7 +123,7 @@ class HeroSection extends StatelessWidget {
         ),
         const SizedBox(height: 12),
         Text(
-          'Full-Stack Developer  \u2192  DevOps & SRE Engineer',
+          'software Developer',
           textAlign: isMobile ? TextAlign.center : TextAlign.left,
           style: TextStyle(
             fontSize: isMobile ? 18 : 24,
@@ -146,7 +146,7 @@ class HeroSection extends StatelessWidget {
           runSpacing: 12,
           children: [
             _SocialButton(
-              icon: FontAwesomeIcons.linkedin,
+              icon: FontAwesomeIcons.linkedin.data,
               label: 'LinkedIn',
               onTap: () => launchUrl(Uri.parse(
                   'https://linkedin.com/in/mongezi-tone-zama-90184921a')),
@@ -157,7 +157,7 @@ class HeroSection extends StatelessWidget {
               onTap: () => launchUrl(Uri.parse('mailto:mongezitone@gmail.com')),
             ),
             _SocialButton(
-              icon: FontAwesomeIcons.github,
+              icon: FontAwesomeIcons.github.data,
               label: 'GitHub',
               onTap: () =>
                   launchUrl(Uri.parse('https://github.com/MongeziTone')),

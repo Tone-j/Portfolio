@@ -91,9 +91,9 @@ class AboutSection extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         Text(
-          'I\'m a full-stack developer at OOGi Lab, where I\'ve spent 3+ years building '
+          'I\'m a software developer at OOGi Lab, where I\'ve spent 3+ years building '
           'cloud-based AI and IoT fleet management platforms serving major logistics clients '
-          'including Australia Post. My work spans the entire stack \u2014 from designing .NET Core '
+          'including Australia Post. My work spans the entire stack, from designing .NET Core '
           'APIs and SQL Server databases to building Flutter mobile apps and real-time IoT dashboards.',
           style: Theme.of(context).textTheme.bodyLarge,
         ),
@@ -107,9 +107,7 @@ class AboutSection extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         Text(
-          'I\'m now actively transitioning into DevOps/SRE roles, combining my strong development '
-          'background with growing expertise in cloud infrastructure, container orchestration, '
-          'and observability to build systems that are reliable, scalable, and automated.',
+          'I enjoy solving infrastructure problems that most users never notice, building resilient backend services, monitoring distributed systems, automating deployments and creating software that continues working long after it\'s shipped.',
           style: Theme.of(context).textTheme.bodyLarge,
         ),
       ],

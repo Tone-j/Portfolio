@@ -106,7 +106,7 @@ class AppTheme {
         surface: Color(0xFF111111),
       ),
       textTheme: _buildTextTheme(Brightness.dark),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: const Color(0xFF1a1a1a),
         elevation: 0,
         shape: RoundedRectangleBorder(
@@ -132,7 +132,7 @@ class AppTheme {
         surface: Colors.white,
       ),
       textTheme: _buildTextTheme(Brightness.light),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: Colors.white,
         elevation: 0,
         shape: RoundedRectangleBorder(
